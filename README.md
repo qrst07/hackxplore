@@ -1,7 +1,7 @@
 # hackxplore
-## "Get Nailed" : our submission for HACKXPLORE 2019
+## "Nailed It" : our submission for HACKXPLORE 2019
 
-We created the "Get Nailed" app with our potential consumers in mind - they can easily use our app for early diagnosis of anemia, fungal infections or potential oxygen-deprivation related diseases. The app uses the Object Detection API Tensorflow (https://www.tensorflow.org/) to detect user's hands and isolate images of their nails. Our code then looks through the image files for RGB values that correspond to the colour of nails of people with anemia, fungal infections and those who lack oxygen.
+We created the "Nailed It" app with our potential consumers in mind - they can easily use our app for early diagnosis of anemia, fungal infections or potential oxygen-deprivation related diseases. The app uses the Object Detection API Tensorflow (https://www.tensorflow.org/) to detect user's hands and isolate images of their nails. Our code then looks through the image files for RGB values that correspond to the colour of nails of people with anemia, fungal infections and those who lack oxygen.
 
 1. User uploads picture of their hand
 2. If there's a hand in the picture, Object Detection will approve the user picture
