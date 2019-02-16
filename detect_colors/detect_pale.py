@@ -1,7 +1,8 @@
 import numpy as np
 import argparse
 import cv2
- 
+
+#to run in terminal 
 ap = argparse.ArgumentParser()
 ap.add_argument("-i", "--image", help = "path to the image")
 args = vars(ap.parse_args())
@@ -10,10 +11,7 @@ image = cv2.imread(args["image"])
 
 # color list of boundaries
 boundaries = [
-	([17, 15, 100], [50, 56, 200]),
-	([86, 31, 4], [220, 88, 50]),
-	([25, 146, 190], [62, 174, 250]),
-	([103, 86, 65], [145, 133, 128])
+	([17, 15, 100], [50, 56, 200])
 ]
 
 # loop over the boundaries
@@ -28,5 +26,5 @@ for (lower, upper) in boundaries:
 	# cv2.imshow("images", np.hstack([image, output]))
 
 #the following lines will write a file with the colours outlined above
-	cv2.imwrite( "./Test_Image.jpg", np.hstack([output]))
+	cv2.imwrite( "./output_files/nails_pale.jpg", np.hstack([output]))
 	cv2.waitKey(0)
