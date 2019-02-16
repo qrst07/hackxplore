@@ -11,7 +11,7 @@ image = cv2.imread(args["image"])
 
 # color list of boundaries
 boundaries = [
-	([17, 15, 100], [50, 56, 200])
+	([25, 146, 190], [62, 174, 250])
 ]
 
 # loop over the boundaries
