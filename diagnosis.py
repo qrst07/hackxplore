@@ -73,6 +73,13 @@ percentage3 = (black3 / (black3+blue))*100
 
 percentage_blue = 100 - percentage
 
+# OUTPUT DIAGNOSIS
+
+if (percentage_yellow >= 0 || percentage_pale >= 0 || percentage_blue >= 0):
+    print ("You show signs of the below diseases - we recommend that you go to a partner physician near you!")
+else:
+    print ("Your nails indicate you are healthy! If you have concerns, be sure to still see a physician near you!")
+
 # OUTPUT CHART
 
 labels = 'Signs of fungal infection', 'Signs of anemia', 'Signs of low oxygen levels', 'Healthy nail'
@@ -86,10 +93,3 @@ autopct='%1.1f%%', shadow=True, startangle=140)
  
 plt.axis('equal')
 plt.show()
-
-# OUTPUT DIAGNOSIS
-
-if (percentage_yellow >= 0 || percentage_pale >= 0 || percentage_blue >= 0):
-    print ("You show signs of the above diseases - we recommend that you go to a partner physician near you!")
-else:
-    print ("Your nails indicate you are healthy! If you have concerns, be sure to still see a physician near you!")
