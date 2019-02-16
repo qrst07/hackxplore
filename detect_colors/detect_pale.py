@@ -9,7 +9,7 @@ args = vars(ap.parse_args())
 
 image = cv2.imread(args["image"])
 
-# color list of boundaries
+# color list of boundaries in BGR
 boundaries = [
 	([17, 15, 100], [50, 56, 200])
 ]
