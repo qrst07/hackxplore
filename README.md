@@ -14,4 +14,4 @@
 5. Coloured pixels / # of total pixels -> resulting % is used to 'diagnose'
 6. If diagnosed, refers to a list of nearby doctors
     - *code for counting number of non-black pixels, calculating % and diagnosis*
-    - *code for referring to doctors*
+    - *code for referring to doctors* 
