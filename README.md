@@ -8,7 +8,6 @@
 3. detect_color files will use diseased nails RGB values --> extract those RGB values and create an image
   - *code for detecting yellow nails*
   - *code for detecting light pink nails*
-  - *code for detecting white nails*
   - *code for detecting blue nails*
   - *code for detecting black nails*
 4. From output image -> count number of coloured pixels
