@@ -75,13 +75,16 @@ percentage_blue = 100 - percentage
 
 # OUTPUT DIAGNOSIS
 
-if (percentage_yellow >= 0 || percentage_pale >= 0 || percentage_blue >= 0):
-    print ("You show signs of the below diseases - we recommend that you go to a partner physician near you!")
+if (percentage_yellow > 10):
+    print("You're displaying signs of an early stage fungal infection. We recommend that you visit a partner physician near you! To view a list of partner physicians, visit the Partner tab accesible in the menu bar") 
+elif (percentage_pale > 10):
+    print("You're displaying signs of anemia. We recommend that you visit a partner physician near you! To view a list of partner physicians, visit the Partner tab accesible in the menu bar") 
+elif (percentage_blue > 10):
+    print("You're displaying signs of an early stage respiratory illness. We recommend that you visit a partner physician near you! To view a list of partner physicians, visit the Partner tab accesible in the menu bar") 
 else:
-    print ("Your nails indicate you are healthy! If you have concerns, be sure to still see a physician near you!")
+    print ("Your nails indicate you are healthy! If you have concerns, feel free to visit a partner physician near you. To view a list of partner physicians, visit the Partner tab accesible in the menu bar")
 
 # OUTPUT CHART
-
 labels = 'Signs of fungal infection', 'Signs of anemia', 'Signs of low oxygen levels', 'Healthy nail'
 sizes = [percentage_yellow, percentage_pale, percentage_blue, black]
 colors = ['yellow', 'white', 'blue', 'pink']
